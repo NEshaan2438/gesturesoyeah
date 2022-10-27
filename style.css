@@ -1,0 +1,40 @@
+body {
+    color: darkblue;
+    background: cyan;
+}
+
+span {
+    font-size: 30px;
+}
+
+#camera, #result {
+    border: 2px solid darkblue;
+    width: 350px;
+    height: 300px; 
+}
+
+p {
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 25px;
+}
+
+h1 {
+    font-size: 55px;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+h5 {
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+#emoji1, emoji2 {
+    font-size: 30px;
+}
+
+#captureImage, #predictImage {
+    font-size: 25px;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <title>Hand Gesture To Emoji</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <center>
+        <br>
+        <h1>Hand Gesture Identification App</h1>
+        <h2 style="font-size:55px">&#9757; &#128077; &#128079; &#128075; &#128076;</h2>
+        <h3>The model can identify the following hand gestures:</p>
+        <h3>&#9996; | &#128074; | &#9995;</p>
+          <div class="col-md-4 col-sm-12 col-xs-12">
+            <h3>Webcam View</h3>
+            <br>
+            <div id="camera" style="border: darkblue 3px solid;"></div>
+            <br>
+            <button id="captureImage" onclick="capture()" class="btn btn-primary" style="font-size: 20px;">Capture Gesture</button>
+          </div>
+          <div id="predictions" class="col-md-4 col-sm-12 col-xs-12">
+            <h3 style="text-decoration: underline;">Hand Gesture</h5>
+            <h3 id="pred1"></h3>
+            <h3 id="emoji1"></h3>
+          </div>
+          <div class="col-md-4 col-sm-12 col-xs-12">
+            <h3>Snapshot</h3>
+            <br>
+            <div id="result" style="border: darkblue 3px solid;"></div>
+            <br>
+            <button id="predictImage" onclick="predict()" class="btn btn-primary" style="font-size: 20px;">Predict Gesture</button>
+          </div>
+      </center>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
